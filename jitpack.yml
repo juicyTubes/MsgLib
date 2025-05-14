@@ -1,0 +1,4 @@
+jitpack:
+  version: 2.0
+  gradle:
+    module: library
