@@ -22,4 +22,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "MyApplication"
 include(":app")
-include(":MsgLib")
+include(":library")

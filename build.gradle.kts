@@ -10,10 +10,16 @@ publishing {
     publications {
         create<MavenPublication>("release") {
             groupId = "com.example"
-            artifactId = "MsgLib"
+            artifactId = "library"
             version = "v1.0"
 
             from(components.findByName(name))
+        }
+    }
+    repositories {
+        maven {
+            name = "myrepo"
+            url = uri(layout.buildDirectory.dir("repo"))
         }
     }
 }

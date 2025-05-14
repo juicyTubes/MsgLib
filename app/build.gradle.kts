@@ -49,8 +49,11 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    implementation(project(":MsgLib"))
-//    implementation("com.github.juicyTubes:MsgLib:v1.1")
+//    implementation(project(":MsgLib"))
+    implementation("com.github.juicyTubes:MsgLib:v1.0")
+
+//    implementation ("io.github.lucksiege:camerax:v3.11.2")
+//    implementation ("com.github.li-xiaojun:XPopup:2.10.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
