@@ -9,11 +9,11 @@ plugins {
 publishing {
     publications {
         create<MavenPublication>("maven") {
-            groupId = "com.example.mylibrary"
-            artifactId = "mylibrary"
+            groupId = "com.example"
+            artifactId = "MsgLib"
             version = "v1.0"
 
-//            from(components["java"])
+            from(components.findByName(name))
         }
     }
 }
