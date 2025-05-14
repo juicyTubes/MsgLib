@@ -8,7 +8,7 @@ plugins {
 }
 publishing {
     publications {
-        create<MavenPublication>("maven") {
+        create<MavenPublication>("release") {
             groupId = "com.example"
             artifactId = "MsgLib"
             version = "v1.0"
