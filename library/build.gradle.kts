@@ -46,6 +46,7 @@ dependencies {
 publishing {
     publications {
         register<MavenPublication>("release") {
+            // https://github.com/jitpack/jitpack.io  上传jitpack文档
 //            groupId = "com.github.juicyTubes"
 //            artifactId = "MsgLib"
 //            version = "2.5"
