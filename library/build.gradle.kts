@@ -46,9 +46,9 @@ dependencies {
 publishing {
     publications {
         register<MavenPublication>("release") {
-            groupId = "com.example"
-            artifactId = "library"
-            version = "1.9"
+            groupId = "com.github.juicyTubes"
+            artifactId = "MsgLib"
+            version = "2.0"
 
             afterEvaluate {
                 from(components.findByName(name))
