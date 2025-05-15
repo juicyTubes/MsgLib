@@ -8,12 +8,14 @@ plugins {
 }
 publishing {
     publications {
-        create<MavenPublication>("release") {
+        register<MavenPublication>("release") {
             groupId = "com.example"
             artifactId = "library"
-            version = "1.6"
+            version = "1.7"
 
-            from(components.findByName(name))
+            afterEvaluate {
+                from(components.findByName(name))
+            }
         }
     }
 //    repositories {
