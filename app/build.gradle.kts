@@ -50,7 +50,7 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(project(":library"))
-//    implementation("com.github.juicyTubes:MsgLib:1.9")
+//    implementation("com.github.juicyTubes:MsgLib:2.0")
 
 //    implementation ("io.github.lucksiege:camerax:v3.11.2")
 //    implementation ("com.github.li-xiaojun:XPopup:2.10.0")

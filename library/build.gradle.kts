@@ -47,8 +47,8 @@ publishing {
     publications {
         register<MavenPublication>("release") {
             groupId = "com.github.juicyTubes"
-            artifactId = "MsgLib"
-            version = "2.0"
+            artifactId = "library"
+            version = "2.1"
 
             afterEvaluate {
                 from(components.findByName(name))
