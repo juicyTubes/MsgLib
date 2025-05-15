@@ -45,10 +45,10 @@ dependencies {
 
 publishing {
     publications {
-        create<MavenPublication>("release") {
+        register<MavenPublication>("release") {
             groupId = "com.github.juicyTubes"
             artifactId = "MsgLib"
-            version = "2.2"
+            version = "2.3"
 
             afterEvaluate {
                 from(components.findByName("release"))
