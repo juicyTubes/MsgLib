@@ -11,7 +11,7 @@ publishing {
         create<MavenPublication>("release") {
             groupId = "com.example"
             artifactId = "library"
-            version = "v1.5"
+            version = "1.6"
 
             from(components.findByName(name))
         }
