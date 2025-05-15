@@ -42,3 +42,23 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
+
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.example"
+            artifactId = "library"
+            version = "1.7"
+
+            afterEvaluate {
+                from(components.findByName(name))
+            }
+        }
+    }
+//    repositories {
+//        maven {
+//            name = "myrepo"
+//            url = uri(layout.buildDirectory.dir("repo"))
+//        }
+//    }
+}
