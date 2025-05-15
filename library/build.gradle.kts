@@ -3,7 +3,7 @@ plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
 }
-group = "com.github.juicyTubes"
+//group = "com.github.juicyTubes"
 android {
     namespace = "com.example.mylibrary"
     compileSdk = 35
