@@ -51,7 +51,7 @@ publishing {
             version = "2.3"
 
             afterEvaluate {
-                from(components.findByName("release"))
+                from(components.findByName(name))
             }
         }
     }
