@@ -3,7 +3,7 @@ plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
 }
-
+group = "com.github.juicyTubes"
 android {
     namespace = "com.example.mylibrary"
     compileSdk = 35
@@ -48,7 +48,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.example"
             artifactId = "library"
-            version = "1.7"
+            version = "1.8"
 
             afterEvaluate {
                 from(components.findByName(name))
