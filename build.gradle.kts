@@ -11,15 +11,15 @@ publishing {
         create<MavenPublication>("release") {
             groupId = "com.example"
             artifactId = "library"
-            version = "v1.4"
+            version = "v1.5"
 
             from(components.findByName(name))
         }
     }
-    repositories {
-        maven {
-            name = "myrepo"
-            url = uri(layout.buildDirectory.dir("repo"))
-        }
-    }
+//    repositories {
+//        maven {
+//            name = "myrepo"
+//            url = uri(layout.buildDirectory.dir("repo"))
+//        }
+//    }
 }
