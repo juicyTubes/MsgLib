@@ -48,17 +48,17 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.example"
             artifactId = "library"
-            version = "1.8"
+            version = "1.9"
 
             afterEvaluate {
                 from(components.findByName(name))
             }
         }
     }
-//    repositories {
-//        maven {
-//            name = "myrepo"
-//            url = uri(layout.buildDirectory.dir("repo"))
-//        }
-//    }
+    repositories {
+        maven {
+            name = "myrepo"
+            url = uri(layout.buildDirectory.dir("repo"))
+        }
+    }
 }

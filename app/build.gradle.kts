@@ -12,8 +12,8 @@ android {
         applicationId = "com.example.myapplication"
         minSdk = 24
         targetSdk = 35
-        versionCode = 4
-        versionName = "1.6"
+        versionCode = 5
+        versionName = "1.9"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -50,7 +50,7 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(project(":library"))
-//    implementation("com.github.juicyTubes:MsgLib:1.7")
+//    implementation("com.github.juicyTubes:MsgLib:1.8")
 
 //    implementation ("io.github.lucksiege:camerax:v3.11.2")
 //    implementation ("com.github.li-xiaojun:XPopup:2.10.0")
